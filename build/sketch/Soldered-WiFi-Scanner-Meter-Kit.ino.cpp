@@ -13,6 +13,7 @@
 #include "ESP8266TimerInterrupt.h"
 
 #include "Roboto_20.h"
+#include "splash.h"
 
 OLED_Display display;
 ESP8266Timer ITimer;
@@ -34,27 +35,27 @@ struct WifiEntry
     char bssid[64];
 } wifiEntries[64], lastSelected = {0};
 
-#line 35 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
+#line 36 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
 int cmpfunc(const void *a, const void *b);
-#line 40 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
+#line 41 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
 void btnCallbackSingle(void *s);
-#line 45 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
+#line 46 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
 void btnCallbackLong(void *s);
-#line 50 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
+#line 51 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
 void timer2ISR();
-#line 55 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
+#line 56 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
 void setup();
-#line 74 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
+#line 75 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
 void scan();
-#line 105 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
+#line 106 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
 int findIndex();
-#line 115 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
+#line 116 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
 void drawMenu();
-#line 194 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
+#line 197 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
 void drawDetail(bool analog);
-#line 251 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
+#line 254 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
 void loop();
-#line 35 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
+#line 36 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
 int cmpfunc(const void *a, const void *b)
 {
     return (((WifiEntry *)b)->rssi - ((WifiEntry *)a)->rssi);
@@ -141,9 +142,11 @@ void drawMenu()
     {
         display.clearDisplay();
 
-        display.setTextSize(2);
-        display.setCursor(22, 27);
+        display.setTextSize(1);
+        display.setCursor(47, 57);
         display.setTextColor(WHITE);
+
+        display.drawBitmap(0, -4, splash1_data, splash1_width, splash1_height, WHITE);
         display.println("NO WIFI");
         display.setTextWrap(false);
 
@@ -276,7 +279,12 @@ void loop()
     scan();
 
     if (btnLong && len)
-        state = (state + 1) % 3, btnLong = 0;
+        state = !state, btnLong = 0;
+
+    if (btnSingle && len && state == 1)
+        state = 2, btnSingle = 0;
+    if (btnSingle && len && state == 2)
+        state = 1, btnSingle = 0;
 
     if (state == 0)
         drawMenu();

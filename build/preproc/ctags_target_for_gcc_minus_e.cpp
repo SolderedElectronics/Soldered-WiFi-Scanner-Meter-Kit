@@ -12,6 +12,7 @@
 # 12 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino" 2
 
 # 14 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino" 2
+# 15 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino" 2
 
 OLED_Display display;
 ESP8266Timer ITimer;
@@ -57,13 +58,13 @@ void setup()
 {
     Serial.begin(74880);
     Serial.println(((reinterpret_cast<const __FlashStringHelper *>(
-# 58 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino" 3
-                  (__extension__({static const char __pstr__[] __attribute__((__aligned__(4))) __attribute__((section( "\".irom0.pstr." "Soldered-WiFi-Scanner-Meter-Kit.ino" "." "58" "." "14" "\", \"aSM\", @progbits, 1 #"))) = (
-# 58 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
+# 59 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino" 3
+                  (__extension__({static const char __pstr__[] __attribute__((__aligned__(4))) __attribute__((section( "\".irom0.pstr." "Soldered-WiFi-Scanner-Meter-Kit.ino" "." "59" "." "15" "\", \"aSM\", @progbits, 1 #"))) = (
+# 59 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
                   "\nESP8266 WiFi scan example"
-# 58 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino" 3
+# 59 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino" 3
                   ); &__pstr__[0];}))
-# 58 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
+# 59 "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
                   ))));
 
     display.begin();
@@ -127,9 +128,11 @@ void drawMenu()
     {
         display.clearDisplay();
 
-        display.setTextSize(2);
-        display.setCursor(22, 27);
+        display.setTextSize(1);
+        display.setCursor(47, 57);
         display.setTextColor(1 /*|< Draw 'on' pixels*/ /*|< Draw 'on' pixels*/);
+
+        display.drawBitmap(0, -4, splash1_data, 128, 64, 1 /*|< Draw 'on' pixels*/ /*|< Draw 'on' pixels*/);
         display.println("NO WIFI");
         display.setTextWrap(false);
 
@@ -262,7 +265,12 @@ void loop()
     scan();
 
     if (btnLong && len)
-        state = (state + 1) % 3, btnLong = 0;
+        state = !state, btnLong = 0;
+
+    if (btnSingle && len && state == 1)
+        state = 2, btnSingle = 0;
+    if (btnSingle && len && state == 2)
+        state = 1, btnSingle = 0;
 
     if (state == 0)
         drawMenu();

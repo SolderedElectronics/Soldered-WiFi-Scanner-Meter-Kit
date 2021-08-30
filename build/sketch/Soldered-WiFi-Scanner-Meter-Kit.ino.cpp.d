@@ -131,4 +131,5 @@
  /Users/nitkonitkic/Documents/Arduino/libraries/avdweb_Switch/avdweb_Switch.h \
  /Users/nitkonitkic/Documents/Arduino/libraries/ESP8266TimerInterrupt/src/ESP8266TimerInterrupt.h \
  /Users/nitkonitkic/Documents/Arduino/libraries/ESP8266TimerInterrupt/src/TimerInterrupt_Generic_Debug.h \
- /Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/build/sketch/Roboto_20.h
+ /Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/build/sketch/Roboto_20.h \
+ /Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/build/sketch/splash.h

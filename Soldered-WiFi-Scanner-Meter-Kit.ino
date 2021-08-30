@@ -11,6 +11,7 @@
 #include "ESP8266TimerInterrupt.h"
 
 #include "Roboto_20.h"
+#include "splash.h"
 
 OLED_Display display;
 ESP8266Timer ITimer;
@@ -118,9 +119,11 @@ void drawMenu()
     {
         display.clearDisplay();
 
-        display.setTextSize(2);
-        display.setCursor(22, 27);
+        display.setTextSize(1);
+        display.setCursor(47, 57);
         display.setTextColor(WHITE);
+
+        display.drawBitmap(0, -4, splash1_data, splash1_width, splash1_height, WHITE);
         display.println("NO WIFI");
         display.setTextWrap(false);
 
@@ -253,7 +256,12 @@ void loop()
     scan();
 
     if (btnLong && len)
-        state = (state + 1) % 3, btnLong = 0;
+        state = !state, btnLong = 0;
+
+    if (btnSingle && len && state == 1)
+        state = 2, btnSingle = 0;
+    if (btnSingle && len && state == 2)
+        state = 1, btnSingle = 0;
 
     if (state == 0)
         drawMenu();
