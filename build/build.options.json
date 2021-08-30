@@ -1,0 +1,12 @@
+{
+  "additionalFiles": "..,..",
+  "builtInLibrariesFolders": "/Applications/Arduino.app/Contents/Java/libraries",
+  "builtInToolsFolders": "/Applications/Arduino.app/Contents/Java/tools-builder,/Applications/Arduino.app/Contents/Java/hardware/tools/avr,/Users/nitkonitkic/Library/Arduino15/packages",
+  "compiler.optimization_flags": "",
+  "customBuildProperties": "build.path=/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/build,build.warn_data_percentage=75,runtime.tools.mkspiffs.path=/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/tools/mkspiffs/3.0.4-gcc10.3-1757bed,runtime.tools.mkspiffs-3.0.4-gcc10.3-1757bed.path=/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/tools/mkspiffs/3.0.4-gcc10.3-1757bed,runtime.tools.xtensa-lx106-elf-gcc.path=/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/tools/xtensa-lx106-elf-gcc/3.0.4-gcc10.3-1757bed,runtime.tools.xtensa-lx106-elf-gcc-3.0.4-gcc10.3-1757bed.path=/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/tools/xtensa-lx106-elf-gcc/3.0.4-gcc10.3-1757bed,runtime.tools.mklittlefs.path=/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/tools/mklittlefs/3.0.4-gcc10.3-1757bed,runtime.tools.mklittlefs-3.0.4-gcc10.3-1757bed.path=/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/tools/mklittlefs/3.0.4-gcc10.3-1757bed,runtime.tools.python3.path=/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/tools/python3/3.7.2-post1,runtime.tools.python3-3.7.2-post1.path=/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/tools/python3/3.7.2-post1",
+  "fqbn": "Dasduino_Boards:esp8266:connect:xtal=160,vt=flash,exception=disabled,stacksmash=disabled,ssl=all,mmu=3232,non32xfer=fast,ResetMethod=nodemcu,CrystalFreq=26,FlashFreq=40,FlashMode=qio,eesz=1M64,sdk=nonosdk_190703,ip=lm2f,dbg=Disabled,lvl=None____,wipe=none,baud=460800",
+  "hardwareFolders": "/Applications/Arduino.app/Contents/Java/hardware,/Users/nitkonitkic/Library/Arduino15/packages",
+  "otherLibrariesFolders": "/Users/nitkonitkic/Documents/Arduino/libraries",
+  "runtime.ide.version": "10815",
+  "sketchLocation": "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/Soldered-WiFi-Scanner-Meter-Kit.ino"
+}

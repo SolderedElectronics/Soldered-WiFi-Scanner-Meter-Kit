@@ -1,0 +1,187 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/hardware/esp8266/1.0.0/cores/esp8266"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/hardware/esp8266/1.0.0/variants/generic"
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/build/sketch/Soldered-WiFi-Scanner-Meter-Kit.ino.cpp",
+    "Include": "ESP8266WiFi.h",
+    "Includepath": "/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/hardware/esp8266/1.0.0/libraries/ESP8266WiFi/src"
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/build/sketch/Soldered-WiFi-Scanner-Meter-Kit.ino.cpp",
+    "Include": "OLED-Display-SOLDERED.h",
+    "Includepath": "/Users/nitkonitkic/Documents/Arduino/libraries/Soldered-OLED-Display-Arduino-Library/src"
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/build/sketch/Soldered-WiFi-Scanner-Meter-Kit.ino.cpp",
+    "Include": "Wire.h",
+    "Includepath": "/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/hardware/esp8266/1.0.0/libraries/Wire"
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/build/sketch/Soldered-WiFi-Scanner-Meter-Kit.ino.cpp",
+    "Include": "avdweb_Switch.h",
+    "Includepath": "/Users/nitkonitkic/Documents/Arduino/libraries/avdweb_Switch"
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/build/sketch/Soldered-WiFi-Scanner-Meter-Kit.ino.cpp",
+    "Include": "ESP8266TimerInterrupt.h",
+    "Includepath": "/Users/nitkonitkic/Documents/Arduino/libraries/ESP8266TimerInterrupt/src"
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Documents/Code/Soldered-WiFi-Scanner-Meter-Kit/build/sketch/Soldered-WiFi-Scanner-Meter-Kit.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/hardware/esp8266/1.0.0/libraries/ESP8266WiFi/src/BearSSLHelpers.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/hardware/esp8266/1.0.0/libraries/ESP8266WiFi/src/CertStoreBearSSL.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/hardware/esp8266/1.0.0/libraries/ESP8266WiFi/src/ESP8266WiFi.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/hardware/esp8266/1.0.0/libraries/ESP8266WiFi/src/ESP8266WiFiAP.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/hardware/esp8266/1.0.0/libraries/ESP8266WiFi/src/ESP8266WiFiGeneric.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/hardware/esp8266/1.0.0/libraries/ESP8266WiFi/src/ESP8266WiFiGratuitous.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/hardware/esp8266/1.0.0/libraries/ESP8266WiFi/src/ESP8266WiFiMulti.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/hardware/esp8266/1.0.0/libraries/ESP8266WiFi/src/ESP8266WiFiSTA-WPS.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/hardware/esp8266/1.0.0/libraries/ESP8266WiFi/src/ESP8266WiFiSTA.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/hardware/esp8266/1.0.0/libraries/ESP8266WiFi/src/ESP8266WiFiScan.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/hardware/esp8266/1.0.0/libraries/ESP8266WiFi/src/WiFiClient.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/hardware/esp8266/1.0.0/libraries/ESP8266WiFi/src/WiFiClientSecureBearSSL.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/hardware/esp8266/1.0.0/libraries/ESP8266WiFi/src/WiFiServer.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/hardware/esp8266/1.0.0/libraries/ESP8266WiFi/src/WiFiServerSecureBearSSL.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/hardware/esp8266/1.0.0/libraries/ESP8266WiFi/src/WiFiUdp.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/hardware/esp8266/1.0.0/libraries/ESP8266WiFi/src/enable_wifi_at_boot_time.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Documents/Arduino/libraries/Soldered-OLED-Display-Arduino-Library/src/OLED-Display-SOLDERED.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Documents/Arduino/libraries/Soldered-OLED-Display-Arduino-Library/src/libs/Adafruit-GFX-Library/Adafruit_GFX.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Documents/Arduino/libraries/Soldered-OLED-Display-Arduino-Library/src/libs/Adafruit-GFX-Library/Adafruit_GrayOLED.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Documents/Arduino/libraries/Soldered-OLED-Display-Arduino-Library/src/libs/Adafruit-GFX-Library/Adafruit_SPITFT.cpp",
+    "Include": "SPI.h",
+    "Includepath": "/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/hardware/esp8266/1.0.0/libraries/SPI"
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Documents/Arduino/libraries/Soldered-OLED-Display-Arduino-Library/src/libs/Adafruit-GFX-Library/Adafruit_SPITFT.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Documents/Arduino/libraries/Soldered-OLED-Display-Arduino-Library/src/libs/Adafruit-GFX-Library/fontconvert/fontconvert.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Documents/Arduino/libraries/Soldered-OLED-Display-Arduino-Library/src/libs/Adafruit-GFX-Library/glcdfont.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Documents/Arduino/libraries/Soldered-OLED-Display-Arduino-Library/src/libs/Adafruit_BusIO/Adafruit_BusIO_Register.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Documents/Arduino/libraries/Soldered-OLED-Display-Arduino-Library/src/libs/Adafruit_BusIO/Adafruit_I2CDevice.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Documents/Arduino/libraries/Soldered-OLED-Display-Arduino-Library/src/libs/Adafruit_SSD1306/Adafruit_SSD1306.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/hardware/esp8266/1.0.0/libraries/Wire/Wire.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Documents/Arduino/libraries/avdweb_Switch/avdweb_Switch.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/nitkonitkic/Library/Arduino15/packages/Dasduino_Boards/hardware/esp8266/1.0.0/libraries/SPI/SPI.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
